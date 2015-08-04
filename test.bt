@@ -1,10 +1,97 @@
 [
   {
-    "version": "0.1.2"
+    "version": "1.0.0"
   },
   {
-    "id": "4b07a377-5fe0-488c-8f2b-f9d3896ce9bd",
-    "name": "3875a26d-1cfd-4369-ada3-e54fde06bf9b",
-    "children": []
+    "uuid": "0f999d8e-55b6-4a74-9f3f-b1c5533361ad",
+    "name": "test",
+    "description": "",
+    "children": [
+      {
+        "id": "d835df73-9d03-4707-8407-02f002330673",
+        "activated": true,
+        "type": "sequence",
+        "metadata": {
+          "label": "",
+          "itemTemplate": "BTSequenceNode.qml"
+        },
+        "properties": {},
+        "children": [
+          {
+            "id": "1d915efe-68da-46cd-8f93-3c0ed5743f5f",
+            "activated": true,
+            "type": "priority",
+            "metadata": {
+              "label": "",
+              "itemTemplate": "BTSelectorPrio.qml"
+            },
+            "properties": {
+              "active": "true"
+            },
+            "children": [
+              {
+                "id": "44327a96-481c-4fd3-bca1-84b1a1cbb7f8",
+                "activated": true,
+                "type": "action",
+                "metadata": {
+                  "label": "",
+                  "itemTemplate": "BTActionNode.qml"
+                },
+                "properties": {
+                  "name": "",
+                  "inputParams": [
+                    {
+                      "value": "",
+                      "type": "string"
+                    }
+                  ],
+                  "outputParams": []
+                },
+                "children": []
+              },
+              {
+                "id": "e6070367-a416-4249-9eca-f45c16a751f5",
+                "activated": true,
+                "type": "condition",
+                "metadata": {
+                  "label": "",
+                  "itemTemplate": "BTConditionNode.qml"
+                },
+                "properties": {
+                  "op1": {
+                    "value": "true",
+                    "type": "string"
+                  },
+                  "op2": {
+                    "value": "true",
+                    "type": "boolean"
+                  },
+                  "op": "=="
+                },
+                "children": [
+                  {
+                    "id": "6c164c74-3800-41cb-a1d6-2104da6b5efe",
+                    "activated": true,
+                    "type": "sendMessage",
+                    "metadata": {
+                      "label": "",
+                      "itemTemplate": "BTSendMessageNode.qml"
+                    },
+                    "properties": {
+                      "inputParams": [],
+                      "channel": {
+                        "value": "",
+                        "type": "string"
+                      }
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
